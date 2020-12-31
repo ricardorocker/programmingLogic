@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Logica de Programação Javascript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Lógica de programação com Javascript</h1>
+    </body>
+    
+    <script>
+
+// com WHILE ------------------------------------------------------------------------------------
+        // var n = parseFloat(prompt("Digite um numero: "))
+
+        // var i = 1
+
+        // while(i < 100){
+        //     var mod = (n * i) % 10
+        //     if(mod === 0){
+        //         console.log(n + " x " + i + " = " + (n * i))
+        //         console.log("<hr>")
+        //     }
+        //     else{
+        //         console.log(n + " x " + i + " = " + (n * i))
+        //     }
+        //     i = i + 1
+        // }
+
+// com FOR ------------------------------------------------------------------------------------
+        // var n = parseFloat(prompt("Digite um numero: "))
+
+        // for(i = 0; i < 100; i++){
+        //     var mod = (n * i) % 10
+        //     if(mod === 0){
+        //         console.log(n + " x " + i + " = " + (n * i))
+        //         console.log("<hr>")
+        //     }
+        //     else{
+        //         console.log(n + " x " + i + " = " + (n * i))
+        //     }
+        // }
+
+// com FOR + simples --------------------------------------------------------------------------
+        var n = parseFloat(prompt("Digite um numero: "))
+
+        for(i = 0; i < 100; i++){
+            console.log(n + " x " + i + " = " + (n * i))
+            if(i % 10 === 0 && i > 0){                
+                console.log('<hr>')
+            }
+        }
+    </script>
+</html>
