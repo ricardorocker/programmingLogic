@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Logica de Programação Javascript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Lógica de programação com Javascript</h1>
+    </body>
+        
+        
+        <button onclick="criarTabuada()">Criar Tabuada</button>
+        <button onclick="apagarTabuada()">Apagar Tabuada</button>
+
+        <div id="message">Olá</div>
+
+    <script>
+
+        var message = ""
+        
+        var x = document.querySelector("#message")
+
+        function criarTabuada(){
+            var n = parseFloat(prompt("Digite um numero: "))
+
+            apagarTabuada()
+            
+            for(i = 0; i <= 100; i++){
+                message += n + " x " + i + " = " + (n * i) + "<br>"
+            }
+            x.innerHTML = message
+        }
+        
+        function apagarTabuada(){
+            message = ""
+            x.innerHTML = message
+        }
+
+
+    </script>
+</html>
